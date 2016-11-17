@@ -14,7 +14,26 @@ html,body{
 }
 
 body{
-  	padding-top:50px; /*padding for navbar*/
+  font-family: 'Raleway', sans-serif;
+  padding-top:50px; /*padding for navbar*/
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+.panel-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+}
+.parkList {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
 }
 
 .navbar-custom .icon-bar {
@@ -61,4 +80,16 @@ body{
     top:50px;
     bottom:0;
     overflow:hidden;
+}
+
+#weather {
+  /*font-family: 'Raleway', sans-serif;*/
+  text-align: center;
+  width: 50%;
+  color: white;
+  border-radius: 10px;
+  /*float: right;*/
+  /*margin-right: 2%;*/
+  margin-left: 25%;
+  background-image: url('https://www.osfashland.org/~/media/Content-Masthead-Folder/WeatherMH47.ashx?as=1&h=308&la=en&w=746&hash=88B4BF08C1D40F898E4AD0E7EFA866F20C831F87');
 }

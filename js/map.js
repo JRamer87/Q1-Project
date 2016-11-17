@@ -3,20 +3,22 @@ $(document)
     .ready(function() { /* google maps -----------------------------------------------------*/
         google.maps.event.addDomListener(window, 'load', initialize);
 
+        /* -----         Loads the map once the page is loaded   ------- */
+
         function initialize() {
 
-            /* position Amsterdam */
-            var latlng = new google.maps.LatLng(30.3076863, -97.8934865);
+            /* position Austin */
+            var latlng = new google.maps.LatLng(30.2655498, -97.7452663);
 
             var mapOptions = {
                 center: latlng,
-                scrollWheel: false,
-                zoom: 13
+                scrollwheel: false,
+                zoom: 12
             };
 
             var marker = new google.maps.Marker({
                 position: latlng,
-                url: '/',
+                // url: '/',
                 animation: google.maps.Animation.DROP
             });
 
@@ -24,13 +26,17 @@ $(document)
             marker.setMap(map);
 
         }
-
-        function performSearch() {
-            var request = {
-                bounds: map.getBounds(),
-                keyword: 'fire stations'
-            };
-            service.radarSearch(request, callback);
-        }
+        //
+        // function performSearch() {
+        //     var request = {
+        //         bounds: map.getBounds(),
+        //         keyword: 'coffee'
+        //     };
+        //     service.radarSearch(request, callback);
+        // }
         /* end google maps -----------------------------------------------------*/
+        $('#search')
+            .on('click', function(event) {
+                console.log('you clicked me');
+            })
     });
